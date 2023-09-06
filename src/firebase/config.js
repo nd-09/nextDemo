@@ -13,4 +13,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 let firebase_app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
+// Default export is causing problem. Make it named export.
 export default firebase_app;
